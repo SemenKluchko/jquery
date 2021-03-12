@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #212534;
+    min-height: 400px;
+}
+
+.nav {
+    background-color: #2B3040;
+    min-height: 115px;
+}
+
+.nav-item {
+    padding-top: 35px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    background-color: none !important;
+}
+
+.tab-content > .tab-pane {
+    color: white;
+}
