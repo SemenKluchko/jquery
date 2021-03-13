@@ -1,21 +1,24 @@
 ;
-function removeClass() {
+
+function removingClass() {
     $('.nav-link').removeClass('active');
-    $('.tab-pane').removeClass('show');
-    $('.tab-pane').removeClass('active');
+    $('.tab-pane').removeClass('active show');
 }
 
-$('.nav-link').on('click', (event) => {
-    removeClass();
-    $(event.target).toggleClass('active');
-    $( ".tab-pane" ).each(function( i ) {
-        if ( $( this ).hasClass('active') &&  $( this ).hasClass('show')) {
-            $( this ).removeClass('active');
-            $( this ).removeClass('show');
-        } else {
-            $( this ).toggleClass('active');
-            $( this ).toggleClass('show');
-        }
-      });
+$('.nav-link-one').on('click', function () {
+    removingClass();
+    $('.tab-pane-one').addClass('show active');
+    $('.nav-link-one').toggleClass('active');
+});
 
-})
+$('.nav-link-two').on('click', function () {
+    removingClass();
+    $('.tab-pane-two').addClass('show active');
+    $('.nav-link-two').toggleClass('active');
+});
+
+$('.nav-link-three').on('click', function () {
+    removingClass();
+    $('.tab-pane-three').addClass('show active');
+    $('.nav-link-three').toggleClass('active');   
+});
